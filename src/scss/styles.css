@@ -21,7 +21,7 @@ body {
 }
 
 .Main {
-  padding: 0rem 3%;
+  padding: 0rem;
 }
 
 .message {
@@ -235,6 +235,149 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  padding: 6rem 5%;
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid black;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  gap: 10rem;
+}
+.footer .footer-container .footer-item-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer .footer-container .footer-item-1 .Ua {
+  width: 35%;
+}
+.footer .footer-container .footer-item-1 h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.footer .footer-container .footer-item-1 p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.footer .footer-container .footer-item-1 .sign-up {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer .footer-container .footer-item-1 .sign-up label {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 0.2rem;
+  bottom: 90%;
+  left: 5%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer .footer-container .footer-item-1 .sign-up .input {
+  display: flex;
+  align-items: center;
+  border: 1.2px solid black;
+  background: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .footer-container .footer-item-1 .sign-up .input input {
+  width: 250px;
+  height: 16vh;
+  padding-left: 20px;
+}
+.footer .footer-container .footer-item-1 .sign-up .input .sign_up {
+  background-color: rgb(246, 244, 244);
+  padding-right: 20px;
+  background: transparent;
+}
+.footer .footer-container .footer-item-1 .sign-up p {
+  font-size: 1.1rem;
+  line-height: 20px;
+}
+.footer .footer-container .footer-item-1 .payment-method {
+  padding-top: 3rem;
+}
+.footer .footer-container .footer-item-1 .payment-method h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.footer .footer-container .footer-item-1 .payment-method .method-img-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 55%;
+  gap: 1rem;
+}
+.footer .footer-container .footer-item-1 .payment-method .method-img-container img {
+  width: 100%;
+}
+.footer .footer-container .footer-item-1 .copy P {
+  font-size: 1.05rem;
+}
+.footer .footer-container .footer-item-2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+.footer .footer-container .footer-item-2 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.footer .footer-container .footer-item-2 table th {
+  padding-bottom: 12px;
+  text-align: left;
+}
+.footer .footer-container .footer-item-2 table td {
+  padding-bottom: 12px;
+  vertical-align: middle;
+}
+.footer .footer-container .footer-item-2 table td img {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+  display: inline;
+}
+.footer .footer-container .footer-item-2 table td p {
+  display: inline;
+  font-size: 14px;
+  color: #333;
+  margin-left: 5px;
+}
+.footer .footer-container .footer-item-2 table .Social {
+  display: flex;
+  width: 100%;
+  gap: 7rem;
+}
+.footer .footer-container .footer-item-2 table .Social .socials {
+  display: flex;
+  flex-direction: initial;
+  align-items: center; /* Center icon and text vertically */
+  justify-content: center; /* Center icon and text horizontally */
+  gap: 8px; /* Space between icon and text */
+}
+.footer .footer-container .footer-item-2 .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .footer-container .footer-item-2 .socials .socials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.footer .footer-container .footer-item-2 .socials .socials-container .social-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -356,7 +499,7 @@ body {
 .Latest-container {
   display: flex;
   align-items: center;
-  padding: 5rem 4%;
+  padding: 5rem 4% 8rem;
   justify-content: center;
 }
 .Latest-container .latest-items {
@@ -364,6 +507,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 5rem;
+}
+.Latest-container .latest-items .Product_items {
+  padding-bottom: 8rem;
 }
 .Latest-container .latest-items .Product_items a {
   display: flex;
@@ -374,6 +520,7 @@ body {
   max-width: 100%;
   height: 40vh;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 1rem;
   border-radius: 10px 10px 0 0;
 }
@@ -471,6 +618,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  .Latest-container .latest-items .Product_items {
+    padding: 1.5rem;
+  }
   .Latest-container .latest-items .Product_items .product-img {
     max-width: 100%;
     height: 35vh;
@@ -535,13 +685,14 @@ body {
   }
   .UaTshirts .tshirt-container .tshirt-content {
     top: 15%;
-    left: 8%;
+    left: 6.5%;
+    color: white;
   }
   .UaTshirts .tshirt-container .tshirt-content h1 {
     font-size: 3.5rem;
   }
   .UaTshirts .tshirt-container .tshirt-content p {
-    width: 100%;
+    width: 90%;
     font-size: 1.5rem;
   }
   .message {
@@ -549,5 +700,20 @@ body {
   }
   .message img {
     width: 30px;
+  }
+  .footer .footer-container {
+    display: flex;
+  }
+  .footer .footer-container .footer-item-1 .sign-up .input input {
+    height: 10vh;
+    width: 300px;
+  }
+  .footer .footer-container .footer-item-1 .sign-up .input button {
+    font-size: 1.2rem;
+    width: 50%;
+    padding-right: 0;
+  }
+  .footer .footer-container .footer-item-2 {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

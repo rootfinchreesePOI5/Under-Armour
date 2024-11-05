@@ -27,9 +27,10 @@ body {
 }
 
 .Main {
-    padding: 0rem 3%;
+    padding: 0rem;
 }
-.message{
+
+.message {
     position: fixed;
     top: 80%;
     left: 92%;
@@ -40,7 +41,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 45px;
     }
 }
@@ -163,9 +165,11 @@ body {
         img {
             width: 100%
         }
-        .mb{
+
+        .mb {
             display: none;
         }
+
         .tshirt-content {
             display: flex;
             flex-direction: column;
@@ -218,33 +222,39 @@ body {
     }
 }
 
-.Sport{
+.Sport {
     display: flex;
     flex-direction: column;
     padding-bottom: 8rem;
-    #showmore{
+
+    #showmore {
         display: none;
     }
-    .sports-container{
-        padding:5rem 15rem;
+
+    .sports-container {
+        padding: 5rem 15rem;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 5rem;
         position: relative;
-        .sport-item{
+
+        .sport-item {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            img{
+
+            img {
                 width: 100%
             }
-            h5{
+
+            h5 {
                 font-size: 1.5rem;
                 font-weight: 500;
                 text-decoration: underline;
                 color: black
             }
         }
+
         .chevron {
             position: absolute;
             padding: 1rem;
@@ -254,14 +264,193 @@ body {
             left: 95%;
             cursor: pointer;
         }
-        .back{
+
+        .back {
             position: absolute;
             padding: 1rem;
             border-radius: 100%;
             box-shadow: 0 0 5px black;
             top: 40%;
             right: 95%;
-            cursor:pointer;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 6rem 5%;
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid black;
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+        gap: 10rem;
+
+        .footer-item-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .Ua {
+                width: 35%
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 300;
+                padding-bottom: 5px;
+            }
+
+            .sign-up {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                label {
+                    background-color: rgb(255, 255, 255);
+                    position: absolute;
+                    padding: 0.2rem;
+                    bottom: 90%;
+                    left: 5%;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+
+                .input {
+                    display: flex;
+                    align-items: center;
+                    border: 1.2px solid black;
+                    background: transparent;
+                    width: fit-content;
+
+                    input {
+                        width: 250px;
+                        height: 16vh;
+                        padding-left: 20px;
+                    }
+
+                    .sign_up {
+                        background-color: rgb(246, 244, 244);
+                        padding-right: 20px;
+                        background: transparent;
+                    }
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    line-height: 20px;
+                }
+            }
+
+            .payment-method {
+                padding-top: 3rem;
+
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                }
+
+                .method-img-container {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    width: 55%;
+                    gap: 1rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .copy {
+                P {
+                    font-size: 1.05rem
+                }
+            }
+        }
+
+        .footer-item-2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            gap: 2rem;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 0;
+            
+                th {
+                    padding-bottom: 12px;
+                    text-align: left;
+                }
+            
+                td {
+                    padding-bottom: 12px;
+                    vertical-align: middle;
+            
+                    img {
+                        width: 24px;
+                        height: auto;
+                        margin-right: 8px;
+                        display: inline;
+                    }
+            
+                    p {
+                        display: inline;
+                        font-size: 14px;
+                        color: #333;
+                        margin-left: 5px;
+                    }
+                }
+                
+                .Social{
+                    display: flex;
+                    width: 100%;
+                    gap: 7rem;
+                    .socials {
+                        display: flex;
+                        flex-direction:initial;
+                        align-items: center; /* Center icon and text vertically */
+                        justify-content: center; /* Center icon and text horizontally */
+                        gap: 8px; /* Space between icon and text */
+                    }
+                }
+            }
+            .socials{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .socials-container{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr ;
+                    gap: 5rem;
+                    .social-item{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -270,6 +459,57 @@ body {
 @import 'navbar';
 @import 'Hero';
 @import 'latest';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .header {
@@ -313,6 +553,7 @@ body {
                 align-items: flex-start;
                 gap: 3rem;
                 width: 100%;
+
                 a {
                     display: flex;
                     text-align: justify;
@@ -324,7 +565,7 @@ body {
                         color: gray;
                     }
                 }
-                
+
                 p {
                     color: white;
                 }
@@ -348,25 +589,31 @@ body {
 
     .Latest-container {
         padding: 0;
+
         .latest-items {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            .Product_items{
-                .product-img{
+
+            .Product_items {
+                padding: 1.5rem;
+                .product-img {
                     max-width: 100%;
                     height: 35vh;
-                    background-size:contain;
+                    background-size: contain;
                     padding: 1rem;
                     border-radius: 10px 10px 0 0;
                 }
-                .new-like{
+
+                .new-like {
                     display: flex;
                     justify-content: space-between;
-                    img{
+
+                    img {
                         width: 30%;
                     }
-                    h1{
+
+                    h1 {
                         display: flex;
                         align-items: center;
                         gap: 0.2rem;
@@ -378,12 +625,14 @@ body {
                         backdrop-filter: blur(10px);
                         border-radius: 5px;
                     }
-    
+
                 }
-                p{
+
+                p {
                     font-size: 1.25rem;
                 }
-                h5{
+
+                h5 {
                     font-size: 1.5rem;
                 }
             }
@@ -395,51 +644,86 @@ body {
             grid-template-columns: 1fr;
         }
     }
-    .Sport{
+
+    .Sport {
         gap: 3rem;
         align-items: center;
-        #showmore{
+
+        #showmore {
             display: block;
         }
-        .sports-container{
+
+        .sports-container {
             padding: 2rem;
             grid-template-columns: 1fr;
         }
-        .chevron{
+
+        .chevron {
             display: none;
         }
-        .back{
+
+        .back {
             display: none;
         }
     }
-    .UaTshirts{
-        .tshirt-container{
-            .ls{
+
+    .UaTshirts {
+        .tshirt-container {
+            .ls {
                 display: none;
             }
-            .mb{
+
+            .mb {
                 display: block;
             }
+
             padding-bottom: 4rem;
+
             .tshirt-content {
                 top: 15%;
-                left: 8%;
-    
+                left: 6.5%;
+                color: white;
                 h1 {
                     font-size: 3.5rem;
                 }
-    
+
                 p {
-                    width: 100%;
+                    width: 90%;
                     font-size: 1.5rem;
                 }
             }
         }
     }
-    .message{
+
+    .message {
         left: 80%;
-        img{
+
+        img {
             width: 30px;
+        }
+    }
+
+    .footer{
+        .footer-container{
+            display: flex;
+            .footer-item-1{
+                .sign-up{
+                    .input{
+                       input{
+                        height: 10vh;
+                        width: 300px;
+                       }
+                       button{
+                        font-size: 1.2rem;
+                        width: 50%;
+                        padding-right: 0;
+                       }
+                    }
+                }
+            }
+            .footer-item-2{
+                display: none;
+            }
         }
     }
 }

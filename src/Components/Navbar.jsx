@@ -30,7 +30,7 @@ const Navbar = () => {
                     />
                 </div>
                 <div className="logo">
-                    <Link to='/'><img src={logo} alt="logo" /></Link>
+                    <Link to='/'  onClick={handleLinkClick}><img src={logo} alt="logo" /></Link>
                 </div>
                 <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <NavLink to='/shoes' onClick={handleLinkClick}><p>Shoes</p></NavLink>
                         <NavLink to='/curry' onClick={handleLinkClick}><p>Curry</p></NavLink>
                         <NavLink to='/collection' onClick={handleLinkClick}><p>Collection</p></NavLink>
-                        <NavLink to='/login'><img src={user} alt="user" /></NavLink>
+                        <NavLink to='/login'  onClick={handleLinkClick}><img src={user} alt="user" /></NavLink>
                     </ul>
                     <div className='search-container'>
                         <div className="search">

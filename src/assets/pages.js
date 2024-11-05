@@ -32,3 +32,31 @@ export const sports = [
     {img: gym , name: "Shop Gym Collection" , path: "/shoes"},
     {img: yoga , name: "Shop Yoga Collection" , path: "/shoes"},
 ]
+
+export const table_data = [
+    {
+        t1: "007 803 651 0087",
+        t2: "Help & FAQ",
+        t3: "Affiliates"
+    },
+    {
+        t1: "Contact Us",
+        t2: "Size Guide",
+        t3: "About Us" 
+    },
+    {
+        t1: "Closed on Public Holidays",
+        t2: "Shiiping And Delivery",
+        t3: "Carrers"
+    },
+    {
+        t1: "0800-1700(GMT +7)",
+        t2: "Returns",
+        t3: "Our Tech"
+    },
+    {
+        t1: "Order Tracking",
+        t2: "Site Map",
+        t3: "Explore UA"
+    }
+]
