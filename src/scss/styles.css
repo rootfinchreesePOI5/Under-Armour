@@ -617,15 +617,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding-bottom: 5rem;
   }
   .Latest-container .latest-items .Product_items {
     padding: 1.5rem;
   }
   .Latest-container .latest-items .Product_items .product-img {
     max-width: 100%;
-    height: 35vh;
+    height: 28vh;
     background-size: contain;
-    padding: 1rem;
     border-radius: 10px 10px 0 0;
   }
   .Latest-container .latest-items .Product_items .new-like {
