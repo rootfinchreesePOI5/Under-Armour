@@ -709,14 +709,13 @@ transform: translateX(58px);
     flex-direction: column;
     text-align: justify;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 5rem;
     width: 100%;
   }
   .header .navbar ul a {
     display: flex;
     text-align: justify;
     width: 100%;
-    border-bottom: 2px solid white;
     color: white;
   }
   .header .navbar ul a:hover {
