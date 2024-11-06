@@ -54,7 +54,38 @@ body {
   color: white;
   transition: 0.4s;
 }
-
+.submit{
+    width: 212px;
+  font-size: 1.5rem;
+  height: 5vh;
+  border-radius: 2px;
+  background-color: #2a2a2a;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(10%);
+  transition: 1s ease;
+  position: relative;
+}
+.submit img{
+    width: 15%;
+    position: absolute;
+    left: -50px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+.submit:hover{ 
+    background-color: rgb(0, 0, 0);
+    transform: translate(10px, 0px);
+  transition-duration: 0.5s;
+}
+.submit:hover img{
+transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: 0.5s;
+}
 .Wide-btn {
   width: 212px;
   font-size: 1.5rem;
@@ -191,9 +222,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 8rem;
-}
-.Sport #showmore {
-  display: none;
+  align-items: center;
+  justify-content: center;
 }
 .Sport .sports-container {
   padding: 5rem 15rem;
@@ -201,6 +231,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   position: relative;
+  align-items: center;
 }
 .Sport .sports-container .sport-item {
   display: flex;
@@ -216,24 +247,35 @@ body {
   text-decoration: underline;
   color: black;
 }
-.Sport .sports-container .chevron {
-  position: absolute;
-  padding: 1rem;
-  border-radius: 100%;
-  box-shadow: 0 0 5px black;
-  top: 40%;
-  left: 95%;
-  cursor: pointer;
+.Sport .more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.Sport .sports-container .back {
-  position: absolute;
-  padding: 1rem;
-  border-radius: 100%;
-  box-shadow: 0 0 5px black;
-  top: 40%;
-  right: 95%;
-  cursor: pointer;
+.Sport .more-items {
+    padding: 5rem 15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    position: relative;
 }
+.Sport .more-items .sport-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .Sport .more-items .sport-item img {
+    width: 100%;
+  }
+  .Sport  .more-items .sport-item h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: black;
+  }
+  
+
 
 .footer {
   padding: 6rem 5%;
@@ -262,6 +304,7 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   padding-bottom: 5px;
+  color: black;
 }
 .footer .footer-container .footer-item-1 .sign-up {
   position: relative;
@@ -283,18 +326,18 @@ body {
   align-items: center;
   border: 1.2px solid black;
   background: transparent;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 1rem;
 }
 .footer .footer-container .footer-item-1 .sign-up .input input {
   width: 250px;
-  height: 16vh;
+  height: 8vh;
   padding-left: 20px;
 }
 .footer .footer-container .footer-item-1 .sign-up .input .sign_up {
-  background-color: rgb(246, 244, 244);
-  padding-right: 20px;
   background: transparent;
+  width: fit-content;
 }
 .footer .footer-container .footer-item-1 .sign-up p {
   font-size: 1.1rem;
@@ -372,12 +415,93 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
 }
+.footer .socials a{
+    color: black
+}
 .footer .footer-container .footer-item-2 .socials .socials-container .social-item {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+.Contact{
+    padding: 10rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.contact-heading{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: calc(50%);
+    border-bottom:2px solid black;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.contact-heading img{
+    width:10%;
+}
+.contact-heading h1{
+    font-family: 'Bebas Neue';
+    font-size: 4.5rem;
+}
+.Contact input,textarea{
+    width: 500px;
+    height: 8vh;
+    padding-left: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size:1.5rem;
+}
+.Contact textarea{
+    height: 15vh;
+    padding: 2rem;
+}
+.contact-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    padding:5rem 0rem;
+}
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.contact-item  span{
+    font-size: 2rem;
+}
+.contact-item-2{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%
+}
+.contact-item-2 .item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1rem;
+}
+.contact-item-2 .item h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.contact-item-2 .item p {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
 .header {
   position: fixed;
   top: 0;
@@ -625,7 +749,7 @@ body {
   .Latest-container .latest-items .Product_items .product-img {
     max-width: 100%;
     height: 21.5vh;
-    background-size: contain;
+    background-size: cover;
     border-radius: 10px 10px 0 0;
   }
   .Latest-container .latest-items .Product_items .new-like {
@@ -665,6 +789,10 @@ body {
     display: block;
   }
   .Sport .sports-container {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .Sport .more-items {
     padding: 2rem;
     grid-template-columns: 1fr;
   }
@@ -715,5 +843,21 @@ body {
   }
   .footer .footer-container .footer-item-2 {
     display: none;
+  }
+  .Contact .contact-heading{
+    gap: 2rem;
+  }
+  .contact-heading img{
+    width: 20%;
+  }
+  .contact-container{
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .contact-item form input,textarea{
+    width: 330px;
+  }
+  .Contact .contact-heading h1{
+    font-size: 2.5rem;
   }
 }

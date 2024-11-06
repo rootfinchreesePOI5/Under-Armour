@@ -34,6 +34,7 @@ const Navbar = () => {
                 </div>
                 <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
+                        <NavLink to='/new' onClick={handleLinkClick}><p><img src={fire_icon} alt="logo" /> New</p></NavLink>
                         <NavLink to='/men' onClick={handleLinkClick}><p>Men</p></NavLink>
                         <NavLink to='/women' onClick={handleLinkClick}><p>Women</p></NavLink>
                         <NavLink to='/kids' onClick={handleLinkClick}><p>Kids</p></NavLink>

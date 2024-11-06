@@ -8,6 +8,8 @@ import { table_data } from '../assets/pages'
 import insta from '../assets/Icons/insta.svg'
 import you from '../assets/Icons/you.svg'
 import face from '../assets/Icons/face.svg'
+import {Link} from 'react-router-dom'
+import { redirect } from 'react-router-dom'
 const Footer = () => {
 
     const table = table_data.map((item, index) => (
@@ -63,19 +65,21 @@ const Footer = () => {
                     <div className="socials">
                         <h4>Ua Socials</h4>
                         <div className="socials-container">
-                        <div className="social-item">
-                            <img src={insta} alt="" />
-                            <p>Instagram</p>
-                        </div>
-                        <div className="social-item">
+                        <Link to={'https://www.instagram.com/underarmour/'}><div className="social-item">
+                                 <img src={insta} alt="" />
+                                 <p>Instagram</p>
+                              </div>
+                        </Link>
+                        <Link to={'https://www.youtube.com/user/underarmour'}><div className="social-item">
                             <img src={you} alt="" />
                             <p>Youtube</p>
                         </div>
-                        <div className="social-item">
-
+                        </Link>
+                        <Link to={'https://www.facebook.com/UnderArmour/'}><div className="social-item">
                             <img src={face} alt="" />
                             <p>FaceBook</p>
                         </div>
+                        </Link>
                         </div>
                     </div>
                 </div>
