@@ -13,6 +13,7 @@ import Home from './Pages/Home'
 import Categories from './Pages/Categories'
 import Footer from './Components/Footer'
 import message from './assets/Icons/message.svg'
+import Collection from './Pages/Collection'
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
       </div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/collection' element={<Men />} />
+        <Route path='/men' element={<Men />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/product:productId' element={<Product />} />
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Order />} />
         <Route path='/categories' element={<Categories />} />
+        <Route path='/collection' element={<Collection/>} />
       </Routes>
       <Footer />
     </div>
