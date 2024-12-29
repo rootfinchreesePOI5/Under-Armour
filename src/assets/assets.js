@@ -1,30 +1,25 @@
-import j001 from '../assets/Images/j001.Avif'
-import j002 from '../assets/Images/j002.Avif'
-import j003 from '../assets/Images/j003.Avif'
-import j004 from '../assets/Images/j004.Avif'
-
-import c001 from '../assets/Images/j001.Avif'
-import c002 from '../assets/Images/j002.Avif'
-import c003 from '../assets/Images/j003.Avif'
-import c004 from '../assets/Images/j004.Avif'
+import j001 from '../assets/Images/j001.avif'
+import j002 from '../assets/Images/j002.avif'
+import j003 from '../assets/Images/j003.avif'
+import j004 from '../assets/Images/j004.avif'
 
 
-import p1 from './Images/p_image_1.Avif';
-import p2 from './Images/p_image_2.Avif';
-import p3 from './Images/p_image_3.Avif';
-import p4 from './Images/p_image_4.Avif';
+import p1 from './Images/p_image_1.avif';
+import p2 from './Images/p_image_2.avif';
+import p3 from './Images/p_image_3.avif';
+import p4 from './Images/p_image_4.avif';
 
-import p1_1 from './Images/p_image_1_1.Avif';
-import p2_1 from './Images/p_image_2_1.Avif';
-import p3_1 from './Images/p_image_3_1.Avif';
-import p4_1 from './Images/p_image_4_1.Avif';
+import p1_1 from './Images/p_image_1_1.avif';
+import p2_1 from './Images/p_image_2_1.avif';
+import p3_1 from './Images/p_image_3_1.avif';
+import p4_1 from './Images/p_image_4_1.avif';
 
-import p5 from './Images/p_image_5.Avif';
-import p6 from './Images/p_image_6.Avif';
-import p7 from './Images/p_image_7.Avif';
-import p8 from './Images/p_image_8.Avif';
-import p9 from './Images/p_image_9.Avif';
-import p10 from './Images/p_image_10.Avif';
+import p5 from './Images/p_image_5.avif';
+import p6 from './Images/p_image_6.avif';
+import p7 from './Images/p_image_7.avif';
+import p8 from './Images/p_image_8.avif';
+import p9 from './Images/p_image_9.avif';
+import p10 from './Images/p_image_10.avif';
 import p11 from './Images/p_image_11.jpg';
 import p12 from './Images/p_image_12.jpg';
 // import p13 from './pImg13.jpg';

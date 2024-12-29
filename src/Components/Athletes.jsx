@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Athlete from '../assets/Images/Athletes.Avif'
+import Athlete from '../assets/Images/Athletes.avif'
 import Title from './Title'
 import { Players } from '../assets/assets'
 import uashirts from '../assets/Images/UA_TShirt.jpg'
