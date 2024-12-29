@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Order = () => {
+const Profile = () => {
   return (
     <div>
-      
+      Profile
     </div>
   )
 }
 
-export default Order
+export default Profile

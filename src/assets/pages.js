@@ -2,6 +2,10 @@ import img1 from '../assets/Images/img1.jpg'
 import img2 from '../assets/Images/img2.jpg'
 import img3 from '../assets/Images/img3.jpg'
 import img4 from '../assets/Images/img4.jpg'
+import img1_1 from '../assets/Images/img1_1.Avif'
+import img2_1 from '../assets/Images/img2_1.Avif'
+import img3_1 from '../assets/Images/img3_1.Avif'
+import img4_1 from '../assets/Images/img4_1.Avif'
 import golf from '../assets/Images/golf.jpg'
 import basketball from '../assets/Images/basketball.jpg'
 import marathon from '../assets/Images/marathon.jpg'
@@ -10,19 +14,27 @@ import yoga from '../assets/Images/yoga.jpg'
 
 
 export const pages  = [
-    {img: img1 , name: "Shop Men" , path: "/men"},
-    {img: img2 , name: "Shop Women" , path: "/women"},
-    {img: img3 , name: "Shop Kids" , path: "/kids"},
-    {img: img4 , name: "Shop Shoes" , path: "/shoes"}
+    {img: img1 , name: "Men" , path: "/New#Men"},
+    {img: img2 , name: "Women" , path: "/New#Women"},
+    {img: img3 , name: "Kids" , path: "/New#Kids"},
+    {img: img4 , name: "Shoes" , path: "/New#shoes"},
+    {img: img1_1 , name: "Men" , path: "/New#Men"},
+    {img: img2_1 , name: "Women" , path: "/New#Women"},
+    {img: img3_1 , name: "Kids" , path: "/New#Kids"},
+    {img: img4_1 , name: "Shoes" , path: "/New#shoes"},
+    
 ]
 export const category = [
-    {name: "New" , path: "/new"},
-    {name: "Men" , path: "/men"},
-    {name: "Women" , path: "/women"},
-    {name: "Kids" , path: "/kids"},
-    {name: "Shoes" , path: "/shoes"},
-    {name: "Curry" , path: "/curry"},
-    {name: "Collections" , path: "/collection"},
+    {
+        name: "New" , 
+        path: "/New", 
+    },
+    {name: "Men" , path: "/Men"},
+    {name: "Women" , path: "/Women"},
+    {name: "Kids" , path: "/Kids"},
+    {name: "Shoes" , path: "/Shoes"},
+    {name: "Curry" , path: "/Curry"},
+    {name: "Collections" , path: "/Collections"},
 ]
 
 export const sports = [

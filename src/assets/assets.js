@@ -1,13 +1,30 @@
-import p1 from './Images/p_image_1.jpg';
-import p2 from './Images/p_image_2.jpg';
-import p3 from './Images/p_image_3.jpg';
-import p4 from './Images/p_image_4.jpg';
-import p5 from './Images/p_image_5.jpg';
-import p6 from './Images/p_image_6.jpg';
-import p7 from './Images/p_image_7.jpg';
-import p8 from './Images/p_image_8.jpg';
-import p9 from './Images/p_image_9.jpg';
-import p10 from './Images/p_image_10.jpg';
+import j001 from '../assets/Images/j001.Avif'
+import j002 from '../assets/Images/j002.Avif'
+import j003 from '../assets/Images/j003.Avif'
+import j004 from '../assets/Images/j004.Avif'
+
+import c001 from '../assets/Images/j001.Avif'
+import c002 from '../assets/Images/j002.Avif'
+import c003 from '../assets/Images/j003.Avif'
+import c004 from '../assets/Images/j004.Avif'
+
+
+import p1 from './Images/p_image_1.Avif';
+import p2 from './Images/p_image_2.Avif';
+import p3 from './Images/p_image_3.Avif';
+import p4 from './Images/p_image_4.Avif';
+
+import p1_1 from './Images/p_image_1_1.Avif';
+import p2_1 from './Images/p_image_2_1.Avif';
+import p3_1 from './Images/p_image_3_1.Avif';
+import p4_1 from './Images/p_image_4_1.Avif';
+
+import p5 from './Images/p_image_5.Avif';
+import p6 from './Images/p_image_6.Avif';
+import p7 from './Images/p_image_7.Avif';
+import p8 from './Images/p_image_8.Avif';
+import p9 from './Images/p_image_9.Avif';
+import p10 from './Images/p_image_10.Avif';
 import p11 from './Images/p_image_11.jpg';
 import p12 from './Images/p_image_12.jpg';
 // import p13 from './pImg13.jpg';
@@ -79,6 +96,105 @@ import p12 from './Images/p_image_12.jpg';
 // import p79 from './pImg79.jpg';
 // import p80 from './pImg80.jpg';
 
+export const Players = [
+    {
+        _id: "c001",
+        name: "Men's UA Tech Mesh Shorts",
+        description: "These shorts feature breathable mesh panels for optimal ventilation during workouts.",
+        price: 30,
+        image: [p9],
+        category: "Women",
+        subCategory: "OuterWear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345455,
+        bestseller: true
+    },
+    {
+        _id: "c002",
+        name: "Women's UA HeatGear Armour Leggings",
+        description: "Compression leggings that provide support and wick away sweat for a comfortable fit.",
+        price: 50,
+        image: [p10],
+        category: "Kids",
+        subCategory: "OuterWear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345456,
+        bestseller: true
+    },
+    {
+        _id: "c003",
+        name: "Men's UA Tactical Stealth Gloves",
+        description: "Durable gloves designed for tactical use with excellent grip and protection.",
+        price: 35,
+        image: [p11],
+        category: "Men",
+        subCategory: "Accessories",
+        sizes: ["M", "L"],
+        date: 1716634345457,
+        bestseller: false
+    },
+    {
+        _id: "c004",
+        name: "Women's UA Sport Wireless Earbuds",
+        description: "Stay connected with these wireless earbuds designed for comfort during workouts.",
+        price: 100,
+        image: [p12],
+        category: "Women",
+        subCategory: "Accessories",
+        sizes: ["One Size"],
+        date: 1716634345458,
+        bestseller: false
+    },
+    {
+        _id: "j001",
+        name: "Men's UA Tech Mesh Shorts",
+        description: "These shorts feature breathable mesh panels for optimal ventilation during workouts.",
+        price: 30,
+        image: [j001],
+        category: "Women",
+        subCategory: "OuterWear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345455,
+        bestseller: true
+    },
+    {
+        _id: "j002",
+        name: "Women's UA HeatGear Armour Leggings",
+        description: "Compression leggings that provide support and wick away sweat for a comfortable fit.",
+        price: 50,
+        image: [j002],
+        category: "Kids",
+        subCategory: "OuterWear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345456,
+        bestseller: true
+    },
+    {
+        _id: "j003",
+        name: "Men's UA Tactical Stealth Gloves",
+        description: "Durable gloves designed for tactical use with excellent grip and protection.",
+        price: 35,
+        image: [j003],
+        category: "Men",
+        subCategory: "Accessories",
+        sizes: ["M", "L"],
+        date: 1716634345457,
+        bestseller: false
+    },
+    {
+        _id: "j004",
+        name: "Women's UA Sport Wireless Earbuds",
+        description: "Stay connected with these wireless earbuds designed for comfort during workouts.",
+        price: 100,
+        image: [j004],
+        category: "Women",
+        subCategory: "Accessories",
+        sizes: ["One Size"],
+        date: 1716634345458,
+        bestseller: false
+    },
+]
+
 
 export const products = [
     {
@@ -86,9 +202,9 @@ export const products = [
         name: "Men's UA Tech 2.0 Short Sleeve T-Shirt",
         description: "Lightweight and breathable, the UA Tech fabric dries quickly and wicks sweat away from the skin.",
         price: 25,
-        image: [p1],
+        image: [p1 , p1_1],
         category: "Men",
-        subCategory: "Topwear",
+        subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL", "XXL"],
         date: 1716634345448,
         bestseller: true
@@ -98,9 +214,9 @@ export const products = [
         name: "Women's UA RUSH Seamless Sports Bra",
         description: "A comfortable sports bra that provides support and moisture-wicking technology for high-impact workouts.",
         price: 40,
-        image: [p2],
+        image: [p2 , p2_1],
         category: "Women",
-        subCategory: "Activewear",
+        subCategory: "OuterWear",
         sizes: ["S", "M", "L"],
         date: 1716621345448,
         bestseller: true
@@ -110,9 +226,9 @@ export const products = [
         name: "Men's UA Charged Assert 8 Running Shoes",
         description: "These running shoes provide a lightweight and responsive ride, perfect for any runner.",
         price: 80,
-        image: [p3],
-        category: "Men",
-        subCategory: "Footwear",
+        image: [p3 , p3_1],
+        category: "Kids",
+        subCategory: "OuterWear",
         sizes: ["8", "9", "10", "11", "12"],
         date: 1716634345449,
         bestseller: false
@@ -122,9 +238,9 @@ export const products = [
         name: "Women's UA HOVR Infinite Running Shoes",
         description: "With UA HOVR technology, these shoes provide a 'zero gravity' feel to maintain energy return.",
         price: 130,
-        image: [p4],
-        category: "Women",
-        subCategory: "Footwear",
+        image: [p4 , p4_1],
+        category: "Men",
+        subCategory: "OuterWear",
         sizes: ["6", "7", "8", "9", "10"],
         date: 1716634345450,
         bestseller: false
@@ -135,8 +251,8 @@ export const products = [
         description: "This mock is designed to keep you warm during cold weather workouts with its thermal technology.",
         price: 60,
         image: [p5],
-        category: "Men",
-        subCategory: "Topwear",
+        category: "Women",
+        subCategory: "OuterWear",
         sizes: ["M", "L", "XL"],
         date: 1716634345451,
         bestseller: true
@@ -147,8 +263,8 @@ export const products = [
         description: "Lightweight and breathable shorts that provide comfort and mobility for your runs.",
         price: 30,
         image: [p6],
-        category: "Women",
-        subCategory: "Bottomwear",
+        category: "Men",
+        subCategory: "OuterWear",
         sizes: ["S", "M", "L"],
         date: 1716634345452,
         bestseller: true
@@ -159,7 +275,7 @@ export const products = [
         description: "This hoodie features water-resistant fabric to keep you dry and comfortable in inclement weather.",
         price: 70,
         image: [p7],
-        category: "Men",
+        category: "Women",
         subCategory: "Outerwear",
         sizes: ["M", "L", "XL"],
         date: 1716634345453,
@@ -171,7 +287,7 @@ export const products = [
         description: "A lightweight jacket with a fitted design, perfect for layering during outdoor activities.",
         price: 75,
         image: [p8],
-        category: "Women",
+        category: "Kids",
         subCategory: "Outerwear",
         sizes: ["S", "M", "L"],
         date: 1716634345454,
@@ -183,8 +299,8 @@ export const products = [
         description: "These shorts feature breathable mesh panels for optimal ventilation during workouts.",
         price: 30,
         image: [p9],
-        category: "Men",
-        subCategory: "Bottomwear",
+        category: "Women",
+        subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL"],
         date: 1716634345455,
         bestseller: true
@@ -195,8 +311,8 @@ export const products = [
         description: "Compression leggings that provide support and wick away sweat for a comfortable fit.",
         price: 50,
         image: [p10],
-        category: "Women",
-        subCategory: "Bottomwear",
+        category: "Kids",
+        subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL"],
         date: 1716634345456,
         bestseller: true

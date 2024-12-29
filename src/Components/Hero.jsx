@@ -1,19 +1,14 @@
-import React from 'react';
-import hero_img from '../assets/Images/hero_img.jpg'
-import WideButton from './WideButton';
-import Title from './Title';
+import React from 'react'
+import heroImg from '../assets/Images/hero_img.Avif'
+import Title from './Title'
 
 const Hero = () => {
   return (
-    <div className='hero'>
-      <img src={hero_img} alt="" />
-      <div className="hero-content">
-        <h5>The Official Athlete Fit</h5>
-        <Title head="UA UNSTOPPABLE WOVEN PANTS"  details= "Our premium woven material has all the performance tech you love—breathable, durable, water-repellent —and it's always on point"/>
-        <WideButton />
-      </div>
-    </div>
-  );
-};
+    <section className='Herosection'>
+        <img className='heroImg' src={heroImg} alt="" />
+        <Title h5={'D.FOX 1'} title={'HAPPY FOX DAY ALT'} p={'From De-Aarons birthday to the holidays—this kind of speed is a gift worth celebrating.'} btn_text='Shop Now' params='Curry'/>
+    </section>
+  )
+}
 
-export default Hero;
+export default Hero

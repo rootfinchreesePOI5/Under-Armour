@@ -1,43 +1,31 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Product from './Pages/Product'
+import { Route , Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import Navbar from './Components/Navbar'
 import Cart from './Pages/Cart'
 import Login from './Pages/Login'
-import PlaceOrder from './Pages/PlaceOrder'
-import Men from './Pages/Men'
-import Order from './Pages/Order'
-import Navbar from './Components/Navbar'
-import Home from './Pages/Home'
+import Contact from './Pages/Contact'
+import Products from './Pages/Products'
 import Categories from './Pages/Categories'
-import Footer from './Components/Footer'
-import message from './assets/Icons/message.svg'
-import Collection from './Pages/Collection'
+import LikedItems from './Pages/LikedItems'
+import Profile from './Pages/Profile'
 
 const App = () => {
   return (
-    <div className='Main'>
-      <Navbar />
-      <div className="message">
-        <Link to={'/contact'}>
-          <img src={message} alt="" />
-        </Link>
-      </div>
+    <div>
+    <Navbar/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/men' element={<Men />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/product:productId' element={<Product />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/place-order' element={<PlaceOrder />} />
-        <Route path='/orders' element={<Order />} />
-        <Route path='/categories' element={<Categories />} />
-        <Route path='/collection' element={<Collection/>} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/products/' element={<Products/>}/>
+        <Route path='/products/:id' element={<Products/>}/>
+        <Route path='/categories' element={<Categories/>}/>
+        <Route path='/categories/:id' element={<Categories/>}/>
+        <Route path='/likedItems' element={<LikedItems/>}/>
       </Routes>
-      <Footer />
     </div>
   )
 }

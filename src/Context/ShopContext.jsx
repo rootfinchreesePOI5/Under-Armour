@@ -1,43 +1,24 @@
-import React, { createContext, useState } from "react";
-import { products as initialProducts } from "../assets/assets";
+import React, { createContext } from 'react';
+import { products } from '../assets/assets';
 
+// Create the context
 export const ShopContext = createContext();
 
+// Define the provider component
+const ShopProvider = (props) => {
+  const currencyLogo = '$';
 
-const ShopContextProvider = (props) => {
-    const [selectedFilters, setSelectedFilters] = useState({
-        category: '',
-        subCategory: '',
-        size: '',
-        bestseller: false,
-    });
+  const value = {
+    products,
+    currencyLogo,
+  };
 
-    const currency = '$';
-    const delivery_fee = 10;
-
-    const filterProducts = () => {
-        return initialProducts.filter(product => {
-            const matchesCategory = selectedFilters.category ? product.category === selectedFilters.category : true;
-            const matchesSubCategory = selectedFilters.subCategory ? product.subCategory === selectedFilters.subCategory : true;
-            const matchesSize = selectedFilters.size ? product.sizes.includes(selectedFilters.size) : true;
-            const matchesBestseller = selectedFilters.bestseller ? product.bestseller === true : true;
-
-            return matchesCategory && matchesSubCategory && matchesSize && matchesBestseller;
-        });
-    };
-
-    const value = {
-        products: filterProducts(),
-        currency,
-        delivery_fee,
-        setSelectedFilters,
-    };
-
-    return (
-        <ShopContext.Provider value={value}>
-            {props.children}
-        </ShopContext.Provider>
-    );
+  return (
+    <ShopContext.Provider value={value}>
+      {props.children}
+    </ShopContext.Provider>
+  );
 };
 
-export default ShopContextProvider;
+export default ShopProvider;
+
