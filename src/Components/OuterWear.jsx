@@ -31,7 +31,7 @@ const OuterWear = () => {
                     <p>NEW</p>
                 </div>
                 <div className="text">
-                <p>{item.name}</p>
+                  <p>{item.name}</p>
                 <p>${item.price}</p>
                 </div>
              </div>
@@ -39,7 +39,7 @@ const OuterWear = () => {
         ))
       }
       </div>
-      <button className='Shop' onClick={() => navigate('/products#outerwear')}>Shop now</button>
+      <button className='Shop' onClick={() => {navigate('/categories'), scrollTo(0 , 0)}}>Shop now</button>
       </div>
     </div>
   )

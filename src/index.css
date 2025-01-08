@@ -16,6 +16,16 @@
   --text-color: black;
   --link-color: crimson;
 }
+
+/* toastofy */
+.Toastify__toast-body {
+  font-size: 1.5rem;
+  font-weight: 600; 
+  font-family: 'BEBAS NEUE';
+  color: #333;
+
+}
+
 html {
   font-size: 60%;
   overflow-x: hidden;
@@ -49,6 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .Help{
@@ -57,10 +68,12 @@ body {
   gap: 5rem;
   justify-content: right;
   font-size: 1.4rem;
+
 }
 
 .Help p{
   font-weight: 700;
+  cursor: pointer;
 }
 
 
@@ -410,4 +423,819 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 8rem 8%;
+}
+
+/* Footer */
+.Footer{
+  padding: 5rem 5% 5rem;
+  background-color: rgb(236, 236, 236);
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+}
+
+.footer-item1{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.uaName{
+  width: 150px;
+}
+
+.stay{
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'BEBAS NEUE';
+}
+
+.stay-in-loop{
+  display: flex;
+  gap: 1rem;
+}
+
+.stay-in-loop input{
+  padding: 1rem;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.stay-in-loop button{
+  width: 80px;
+  border-radius: 1px;
+  background-color: black;
+  color: white;
+  border-radius: 7.5px;
+  border: none;
+  cursor: pointer;
+}
+
+.terms{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.uaApp{
+  background-color: black;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.uaApp img{
+  width: 30px;
+}
+
+.payment-methods{
+  width: 10%;
+  display: flex;
+  gap: 1rem;
+}
+
+.payment-methods img{
+  width: 100%;
+}
+
+.footer-item2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-item2 ul{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 5rem;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.footer-item2 ul li{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-item2 ul li p{
+  cursor: pointer;
+}
+
+.socials p{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-item2 h4{
+  font-family: 'BEBAS NEUE';
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Categories */
+.Categories{
+  padding: 18rem 5%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+}
+
+.filter-items{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter{
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.filter-byCategory{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+.filter-categories{
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  padding: 1rem;
+  border: 1px solid;
+  transition: 0.4s ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(227, 227, 227);
+}
+
+.filter-categories:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.categories p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  transition: 0.4s ease-in-out;
+}
+
+.categories p:hover{
+  text-decoration: underline;
+  transition: 0.5s ease;
+}
+
+
+/* Products */
+.Products{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  gap: 5rem;
+}
+
+.total-items{
+  font-size: 2rem;
+  color: crimson;
+  font-family: 'Bebas neue';
+  text-align: right;
+  padding: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product-items{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  color: black;
+}
+
+.product-items img{
+  width: 100%;
+}
+
+
+/* Products page */
+
+.Products-page{
+  padding: 12rem 5% 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.selected-product-container{
+ display: grid;
+ grid-template-columns: 2fr 3fr;
+  padding: 5rem;
+  width: 100%;
+}
+
+
+.product-image img{
+  width: 80%;
+}
+
+.Like img{
+  width: 30px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.Like{
+  position: absolute;
+  top: 22.5%;
+  padding: 1.5rem;
+  left: 31%;
+  cursor: pointer;
+}
+
+.product-description{
+ display: flex;
+ flex-direction: column;
+ gap: 2.5rem; 
+ width: 100%;
+}
+
+
+.stock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.item-name{
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.instock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.instock span{
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #00ff40;
+}
+
+.instock p{
+  color: #00ff40;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.outofstock{
+  color: crimson;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.item-description{
+  font-size: 3.5rem;
+  font-family: 'BEBAS NEUE';
+  width: 70%;
+  font-weight: 800;
+}
+
+.rating-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-gp{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.gp{
+  cursor: pointer;
+}
+
+.gp:hover{
+  text-decoration: underline;
+}
+
+.rating-price{
+  font-size: 2.5rem;
+}
+
+.gender , .sizes{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.gender-type{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.gender button{
+  padding: 1rem;
+  width: 70px;
+  border: 1px solid;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+.size-btn{
+  display: flex;
+  gap: 2rem;
+}
+
+.size-btn button{
+  width: 60px;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-bag , .out{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.add-to-bag button , .out button{
+  width: 60%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.add-to-bag button img , .out button img{
+  width: 15px;
+}
+
+.add-to-bag button:nth-of-type(1){
+  background-color: crimson;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.out button:nth-of-type(1){
+  background-color: rgb(166, 94, 110);
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.add-to-bag button:hover{
+  background-color: black;
+  transition: 0.4s ease-in-out;
+}
+
+.add-to-bag button:nth-of-type(2):hover{
+  background-color: rgb(178, 178, 178);
+  transition: 0.4s ease-in-out;
+}
+
+/* related */
+.Related{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 5%;
+}
+.related-title{
+  font-size: 3rem;
+  font-family: 'Bebas neue';
+}
+
+.related-products{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+}
+
+.related-products img{
+  width: 80%;
+}
+
+/* login */
+.Login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 30%;
+  min-height: 40vh;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  padding: 1rem 2%;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px gray;
+}
+
+.login-type{
+  font-size: 3rem;
+  font-family: 'BEBAS NEUE';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-type img{
+  cursor: pointer;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.label input{
+  width: 100%;
+  height: 5vh;
+  padding-left: 20px;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 2px;
+}
+
+.save{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.remember{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.forgot{
+  color: white;
+  text-decoration: underline;
+}
+
+.check::before{
+  background-color: 1px solid black;
+  outline: none;
+}
+
+.submit , .create-account{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.submit img {
+  width: 20px;
+  position: absolute;
+  top: 77.5%;
+  left: 2.5%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.create-account img{
+  width: 20px;
+  position: absolute;
+  top: 75%;
+  left: 2.5%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.submit button , .create-account button{
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.submit button:hover{
+  background-color: rgb(31, 31, 31);
+  transition: 0.4s ease-in;
+}
+
+.create-account button:hover{
+  background-color: rgb(31, 31, 31);
+  transition: 0.4s ease-in;
+}
+
+
+.submit button:hover img{
+  opacity: 1;
+  left: 25%;
+  transition: 0.4s ease;
+}
+
+.create-account button:hover img{
+  opacity: 1;
+  left: 25%;
+  transition: 0.4s ease;
+}
+
+.register , .signin{
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.register p , .signin p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.register span , .signin span{
+  color: rgb(244, 244, 244);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*  Profile*/
+
+.Profile{
+  padding: 15rem 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-title{
+  font-size: 4rem;
+  font-family: 'BEBAS NEUE';
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.pro-pic{
+  width: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+.left-container{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.pro-dets{
+  padding: 1rem 2%;
+  border-left:1px solid ;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: 0.4s ease-in-out;
+}
+
+.pro-dets p{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'BEBAS NEUE';
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.pro-dets span{
+  font-size: 1.5rem;
+  color: grey;
+  font-weight: normal;
+  width: 100%;
+}
+
+.pro-dets button{
+  width: 70%;
+  height: 5vh;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.edit button:hover{
+  background-color: crimson;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.switch button:hover{
+  background: blueviolet;
+  transition: 0.4s ease-in-out;
+}
+
+.pro{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-bottom: 1px solid;
+}
+
+.myaccounts-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.4s ease-in-out;
+}
+.myaccounts-dropdown img{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.pro-dets input{
+  width: 100%;
+  border-bottom: 1px solid;
+  padding: 1rem;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.right-container{
+  position: relative;
+}
+
+.right-container img{
+  width: 100%;
+}
+
+.flow{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  background: white;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  cursor: pointer;
+}
+
+.flow img{
+  width: 25px;
+}
+
+.flow button{
+  background: transparent;
+}
+
+.flow:hover{
+  background: linear-gradient(to right, #aaffa9, #11ffbd);
+  transition: 0.4s ease-in-out;
+}
+
+
+/* Likeitems */
+.Likeitems{
+  padding: 15rem 5%;
+}
+
+.liked-title{
+  font-size: 3rem;
+  font-family: 'BEBAS NEUE';
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.liked-title span{
+  font-family: 'BEBAS NEUE';
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.liked-items-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.liked-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e6e6e698;
+  color: black;
+}
+
+.liked-item h3{
+  text-decoration: underline;
+}
+.liked-item-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.liked-item-info span{
+  font-size: 1.5rem;
+}
+
+.liked-left {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+.liked-left img{
+  width: 60px;
+  border-radius: 100%;
+}
+
+.myliked-item-dets{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mylikes{
+  display: flex;
+}
+
+.remove-like{
+  width: 10%;
+  background: black;
+  color: white;
+  height: 4vh;
+  border-radius: 2px;
+  cursor: pointer;
 }

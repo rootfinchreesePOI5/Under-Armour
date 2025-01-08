@@ -22,6 +22,13 @@ import p9 from './Images/p_image_9.avif';
 import p10 from './Images/p_image_10.avif';
 import p11 from './Images/p_image_11.jpg';
 import p12 from './Images/p_image_12.jpg';
+
+import shoes1 from '../assets/Images/shoes/20.jpg'
+import shoes2 from '../assets/Images/shoes/2.jpg'
+import shoes3 from '../assets/Images/shoes/3.jpg'
+import shoes4 from '../assets/Images/shoes/4.jpg'
+import shoes5 from '../assets/Images/shoes/5.jpg'
+import shoes6 from '../assets/Images/shoes/6.jpg'
 // import p13 from './pImg13.jpg';
 // import p14 from './pImg14.jpg';
 // import p15 from './pImg15.jpg';
@@ -201,7 +208,7 @@ export const products = [
         category: "Men",
         subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL", "XXL"],
-        date: 1716634345448,
+        ratings: 5,
         bestseller: true
     },
     {
@@ -213,7 +220,7 @@ export const products = [
         category: "Women",
         subCategory: "OuterWear",
         sizes: ["S", "M", "L"],
-        date: 1716621345448,
+        ratings: 4,
         bestseller: true
     },
     {
@@ -225,7 +232,7 @@ export const products = [
         category: "Kids",
         subCategory: "OuterWear",
         sizes: ["8", "9", "10", "11", "12"],
-        date: 1716634345449,
+        ratings: 5,
         bestseller: false
     },
     {
@@ -237,7 +244,7 @@ export const products = [
         category: "Men",
         subCategory: "OuterWear",
         sizes: ["6", "7", "8", "9", "10"],
-        date: 1716634345450,
+        ratings: 4,
         bestseller: false
     },
     {
@@ -249,7 +256,7 @@ export const products = [
         category: "Women",
         subCategory: "OuterWear",
         sizes: ["M", "L", "XL"],
-        date: 1716634345451,
+        ratings: 3,
         bestseller: true
     },
     {
@@ -261,7 +268,7 @@ export const products = [
         category: "Men",
         subCategory: "OuterWear",
         sizes: ["S", "M", "L"],
-        date: 1716634345452,
+        ratings: 5,
         bestseller: true
     },
     {
@@ -273,7 +280,7 @@ export const products = [
         category: "Women",
         subCategory: "Outerwear",
         sizes: ["M", "L", "XL"],
-        date: 1716634345453,
+        ratings: 4,
         bestseller: false
     },
     {
@@ -285,7 +292,7 @@ export const products = [
         category: "Kids",
         subCategory: "Outerwear",
         sizes: ["S", "M", "L"],
-        date: 1716634345454,
+        ratings: 3,
         bestseller: false
     },
     {
@@ -297,7 +304,7 @@ export const products = [
         category: "Women",
         subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL"],
-        date: 1716634345455,
+        ratings: 4,
         bestseller: true
     },
     {
@@ -309,7 +316,7 @@ export const products = [
         category: "Kids",
         subCategory: "OuterWear",
         sizes: ["S", "M", "L", "XL"],
-        date: 1716634345456,
+        ratings: 5,
         bestseller: true
     },
     {
@@ -321,7 +328,7 @@ export const products = [
         category: "Men",
         subCategory: "Accessories",
         sizes: ["M", "L"],
-        date: 1716634345457,
+        ratings: 2,
         bestseller: false
     },
     {
@@ -333,81 +340,81 @@ export const products = [
         category: "Women",
         subCategory: "Accessories",
         sizes: ["One Size"],
-        date: 1716634345458,
+        ratings: 5,
         bestseller: false
     },
-    // {
-    //     _id: "undr013",
-    //     name: "Men's UA Run Visor",
-    //     description: "Lightweight visor designed to keep the sun out of your eyes during your runs.",
-    //     price: 20,
-    //     image: [p13],
-    //     category: "Men",
-    //     subCategory: "Accessories",
-    //     sizes: ["One Size"],
-    //     date: 1716634345459,
-    //     bestseller: false
-    // },
-    // {
-    //     _id: "undr014",
-    //     name: "Women's UA Performance Headbands",
-    //     description: "Keep your hair in place and sweat away from your face with these stylish headbands.",
-    //     price: 15,
-    //     image: [p14],
-    //     category: "Women",
-    //     subCategory: "Accessories",
-    //     sizes: ["One Size"],
-    //     date: 1716634345460,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "undr015",
-    //     name: "Men's UA Streaker Run Long Sleeve T-Shirt",
-    //     description: "A lightweight long sleeve shirt designed for runners, featuring sweat-wicking fabric.",
-    //     price: 55,
-    //     image: [p15],
-    //     category: "Men",
-    //     subCategory: "Topwear",
-    //     sizes: ["S", "M", "L", "XL"],
-    //     date: 1716634345461,
-    //     bestseller: false
-    // },
-    // {
-    //     _id: "undr016",
-    //     name: "Women's UA Fly Fast Training Shorts",
-    //     description: "These training shorts are designed for ultimate comfort and mobility during workouts.",
-    //     price: 35,
-    //     image: [p16],
-    //     category: "Women",
-    //     subCategory: "Bottomwear",
-    //     sizes: ["S", "M", "L"],
-    //     date: 1716634345462,
-    //     bestseller: true
-    // },
-    // {
-    //     _id: "undr017",
-    //     name: "Men's UA Ripple Running Shoes",
-    //     description: "Lightweight running shoes that offer comfort and support for everyday runs.",
-    //     price: 85,
-    //     image: [p17],
-    //     category: "Men",
-    //     subCategory: "Footwear",
-    //     sizes: ["8", "9", "10", "11"],
-    //     date: 1716634345463,
-    //     bestseller: false
-    // },
-    // {
-    //     _id: "undr018",
-    //     name: "Women's UA Charged Bandit 5 Running Shoes",
-    //     description: "These running shoes feature responsive cushioning for a smooth ride and a secure fit.",
-    //     price: 120,
-    //     image: [p18],
-    //     category: "Women",
-    //     subCategory: "Footwear",
-    //     sizes: ["6", "7", "8", "9", "10"],
-    //     date: 1716634345464,
-    //     bestseller: true
-    // },
+    {
+        _id: "undr013",
+        name: "Men's UA Run Visor",
+        description: "Lightweight visor designed to keep the sun out of your eyes during your runs.",
+        price: 20,
+        image: [shoes1],
+        category: "Shoes",
+        subCategory: "Accessories",
+        sizes: ["One Size"],
+        date: 1716634345459,
+        bestseller: false
+    },
+    {
+        _id: "undr014",
+        name: "Women's UA Performance Headbands",
+        description: "Keep your hair in place and sweat away from your face with these stylish headbands.",
+        price: 15,
+        image: [shoes2],
+        category: "Shoes",
+        subCategory: "Accessories",
+        sizes: ["One Size"],
+        date: 1716634345460,
+        bestseller: true
+    },
+    {
+        _id: "undr015",
+        name: "Men's UA Streaker Run Long Sleeve T-Shirt",
+        description: "A lightweight long sleeve shirt designed for runners, featuring sweat-wicking fabric.",
+        price: 55,
+        image: [shoes3],
+        category: "Shoes",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345461,
+        bestseller: false
+    },
+    {
+        _id: "undr016",
+        name: "Women's UA Fly Fast Training Shorts",
+        description: "These training shorts are designed for ultimate comfort and mobility during workouts.",
+        price: 35,
+        image: [shoes4],
+        category: "Shoes",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L"],
+        date: 1716634345462,
+        bestseller: true
+    },
+    {
+        _id: "undr017",
+        name: "Men's UA Ripple Running Shoes",
+        description: "Lightweight running shoes that offer comfort and support for everyday runs.",
+        price: 85,
+        image: [shoes5],
+        category: "Shoes",
+        subCategory: "Footwear",
+        sizes: ["8", "9", "10", "11"],
+        date: 1716634345463,
+        bestseller: false
+    },
+    {
+        _id: "undr018",
+        name: "Women's UA Charged Bandit 5 Running Shoes",
+        description: "These running shoes feature responsive cushioning for a smooth ride and a secure fit.",
+        price: 120,
+        image: [shoes6],
+        category: "Shoes",
+        subCategory: "Footwear",
+        sizes: ["6", "7", "8", "9", "10"],
+        date: 1716634345464,
+        bestseller: true
+    },
     // {
     //     _id: "undr019",
     //     name: "Men's UA Impact Training Tank",

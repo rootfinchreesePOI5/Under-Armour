@@ -19,7 +19,7 @@ const Athletes = () => {
       }
     
     useEffect(() =>{
-      setProducts()
+      setProducts();
     },[Players , today])
   return (
     <div className='Athletes'>
@@ -33,7 +33,7 @@ const Athletes = () => {
       <div className='Players_info'>
               {
                 playerItems.map((item , index) => (
-                         <Link  className='outerwear-items' to={`/products/${item._id}`} key={index}>
+                         <Link  className='outerwear-items' to={`/Collections#uashirts`} key={index}>
                            <img src={item.image} alt="" />
                            <div className='product-info'>
                               <div className='new-hot'>

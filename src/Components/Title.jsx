@@ -10,7 +10,7 @@ const Title = ({h5 , title , p , btn_text , params}) => {
             <h1>{title}</h1>
         </div>
         <p>{p}</p>
-        <button className='Shop' onClick={() => navigate(`/categories/Collections#${params}`)}>{btn_text}</button>
+        <button className='Shop' onClick={() => navigate(`/Collections#${params}`)}>{btn_text}</button>
     </div>
   )
 }

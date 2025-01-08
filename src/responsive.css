@@ -70,7 +70,8 @@
     padding: 2rem;
   }
   .Herosection{
-    padding: 6rem 0;
+    padding: 6rem 0% 0rem;
+    min-height: fit-content;
   }
   .new_arrivals{
     display: grid;
@@ -106,5 +107,47 @@
     padding: 8rem 8%;
     gap: 2rem;
   }
-  
+  .Footer{
+    padding: 5rem 2%;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .stay-in-loop{
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .stay-in-loop button {
+    padding: 1rem;
+  }
+  .footer-item2 ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Title h1{
+    font-size: 3rem;
+  }
+
+  .Title p{
+    width: 80%;
+  }
+
+  .Categories{
+    padding: 10rem 5% ;
+    grid-template-columns: 1fr;
+  }
+  .Products{
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    gap: 5rem;
+  }
+  .Login{
+    width: 75%;
+  }
 }
