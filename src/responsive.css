@@ -110,6 +110,10 @@
   .Footer{
     padding: 5rem 2%;
   }
+
+  .footer-item1{
+    width: 70%;
+  }
   .footer-container{
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -122,8 +126,8 @@
   .stay-in-loop button {
     padding: 1rem;
   }
-  .footer-item2 ul {
-    grid-template-columns: 1fr 1fr;
+  .footer-item2{
+   display: none;
   }
 
   .Title h1{
@@ -149,5 +153,55 @@
   }
   .Login{
     width: 75%;
+  }
+
+  /* .Products-page{
+    padding: 0;
+  } */
+  .selected-product-container{
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0;
+  }
+
+  .Like{
+    display: none;
+  }
+
+  .product-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stock{
+    display: block;
+  }
+
+  .item-description{
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .size-btn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .add-to-bag button , .out  button{
+    width: 100%;
+  }
+
+  .related-products{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .outofstock{
+    margin-top: 10px;
+  }
+  .instock{
+    margin-top: 10px;
   }
 }
